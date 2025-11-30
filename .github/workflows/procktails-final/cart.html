@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Procktails - Cart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Review your Procktails cart before checkout. Adjust quantities, remove items, or head back to the store.">
+  <meta property="og:title" content="Procktails - Cart">
+  <meta property="og:description" content="Review your Procktails cart and get ready to checkout.">
+  <meta property="og:image" content="assets/poster.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://procktails.example/cart.html">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background video reused on cart page -->
+  <div class="video-layer">
+    <video id="bgVideo" preload="metadata" muted playsinline aria-hidden="true" poster="assets/poster.png">
+      <source src="assets/procktail-reveal.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+  </div>
+  <!-- Header with nav links -->
+  <header class="site-header">
+    <div class="logo">Procktails</div>
+    <nav class="nav-links">
+      <a href="index.html#card-hero">Home</a>
+      <a href="index.html#card-store">Store</a>
+      <a href="index.html#card-cocktails">Recommended</a>
+      <a href="index.html#card-benefits">Benefits</a>
+    </nav>
+    <a href="cart.html" class="cart-bubble" aria-label="View cart">
+      &#128722; <span id="cart-count">0</span>
+    </a>
+  </header>
+  <!-- Main content for cart -->
+  <div class="snap-container">
+    <main class="cards-track">
+      <section class="scene-card is-visible is-active">
+        <div class="card-inner">
+          <h2>Your Cart</h2>
+          <p class="card-subtitle">Review your selections before checkout.</p>
+          <div id="cart-container"></div>
+          <div class="cart-summary">
+            <div class="cart-total">
+              <span>Total:</span>
+              <span id="cart-total-amount">$0.00</span>
+            </div>
+            <div class="cart-actions">
+              <button id="checkout-btn" class="btn-primary">Proceed to Checkout</button>
+              <a id="stripe-checkout-link" class="btn-ghost" href="#" target="_blank" rel="noreferrer">Checkout with Stripe</a>
+            </div>
+          </div>
+          <p id="cart-empty" class="cart-empty-message">
+            Your cart is empty. Go back to the <a href="index.html#card-store">store</a> to add some Procktails.
+          </p>
+        </div>
+      </section>
+    </main>
+    <div class="end-spacer"></div>
+  </div>
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h4>Procktails</h4>
+        <p>Protein + electrolytes built for the nights you still care about tomorrow.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="mailto:hello@procktails.com">hello@procktails.com</a></p>
+        <p>@procktails on IG/TikTok</p>
+      </div>
+      <div>
+        <h4>Info</h4>
+        <p>Shipping: 3-5 days domestic</p>
+        <p>Returns: unopened sachets within 30 days</p>
+        <p>Drink responsibly.</p>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; <span id="year"></span> Procktails. Drink smart. Have fun.</p>
+  </footer>
+  <script src="cart.js"></script>
+</body>
+</html>

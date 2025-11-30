@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Procktails - Checkout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Complete your Procktails order. Review cart, add shipping details, and confirm.">
+  <meta property="og:title" content="Procktails - Checkout">
+  <meta property="og:description" content="Complete your Procktails order and confirm your details.">
+  <meta property="og:image" content="assets/poster.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://procktails.example/checkout.html">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="video-layer">
+    <video id="bgVideo" preload="metadata" muted playsinline aria-hidden="true" poster="assets/poster.png">
+      <source src="assets/procktail-reveal.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+  </div>
+  <header class="site-header">
+    <div class="logo">Procktails</div>
+    <nav class="nav-links">
+      <a href="index.html#card-hero">Home</a>
+      <a href="index.html#card-store">Store</a>
+      <a href="index.html#card-cocktails">Recommended</a>
+      <a href="index.html#card-benefits">Benefits</a>
+    </nav>
+    <a href="cart.html" class="cart-bubble" aria-label="View cart">
+      &#128722; <span id="cart-count">0</span>
+    </a>
+  </header>
+  <div class="snap-container">
+    <main class="cards-track">
+      <section class="scene-card is-visible is-active">
+        <div class="card-inner">
+          <h2>Checkout</h2>
+          <p class="card-subtitle">Confirm your order details below.</p>
+          <div id="order-summary"></div>
+          <div class="cart-summary">
+            <div class="cart-total">
+              <span>Total:</span>
+              <span id="checkout-total">$0.00</span>
+            </div>
+            <button id="confirm-order-btn" class="btn-primary">Complete Purchase</button>
+          </div>
+          <form id="checkout-form" class="checkout-form" novalidate>
+            <div class="form-grid">
+              <label>Full name
+                <input type="text" name="name" autocomplete="name" required>
+              </label>
+              <label>Email
+                <input type="email" name="email" autocomplete="email" required>
+              </label>
+              <label>Address
+                <input type="text" name="address" autocomplete="street-address" required>
+              </label>
+              <label>City
+                <input type="text" name="city" autocomplete="address-level2" required>
+              </label>
+              <label>Country
+                <input type="text" name="country" autocomplete="country" required>
+              </label>
+              <label>Postal code
+                <input type="text" name="postal" autocomplete="postal-code" required>
+              </label>
+            </div>
+            <label class="checkbox-row">
+              <input type="checkbox" name="updates">
+              <span>Send me drops and flavour updates.</span>
+            </label>
+            <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <div class="end-spacer"></div>
+  </div>
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h4>Procktails</h4>
+        <p>Protein + electrolytes built for the nights you still care about tomorrow.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="mailto:hello@procktails.com">hello@procktails.com</a></p>
+        <p>@procktails on IG/TikTok</p>
+      </div>
+      <div>
+        <h4>Info</h4>
+        <p>Shipping: 3-5 days domestic</p>
+        <p>Returns: unopened sachets within 30 days</p>
+        <p>Drink responsibly.</p>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; <span id="year"></span> Procktails. Drink smart. Have fun.</p>
+  </footer>
+  <script src="checkout.js"></script>
+</body>
+</html>

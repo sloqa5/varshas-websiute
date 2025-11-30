@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" rx="48" fill="url(#g1)"/>
+  <rect x="36" y="34" width="728" height="532" rx="36" fill="rgba(2,6,23,0.32)"/>
+  <text x="64" y="180" fill="#ecfeff" font-family="Inter, Arial, sans-serif" font-size="62" font-weight="800">Lime Electro</text>
+  <text x="64" y="240" fill="#ecfeff" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="700">Punch</text>
+  <text x="64" y="320" fill="#cffafe" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="600">Bright lime. Electrolytes. Clean finish.</text>
+  <text x="64" y="380" fill="#e0f2fe" font-family="Inter, Arial, sans-serif" font-size="22">10g protein | hydration blend | low sugar</text>
+  <circle cx="660" cy="160" r="70" fill="#22d3ee" opacity="0.35"/>
+  <circle cx="640" cy="200" r="34" fill="#ecfeff" opacity="0.7"/>
+  <circle cx="140" cy="120" r="40" fill="#4ade80" opacity="0.35"/>
+</svg>

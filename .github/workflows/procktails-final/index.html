@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Procktails - Protein + Electrolyte Cocktail Sachets</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Protein + electrolyte cocktail sachets that lift your spirits and keep you going. Shop flavours, see recipes, and quick-view product details.">
+  <meta property="og:title" content="Procktails - Protein + Electrolyte Cocktail Sachets">
+  <meta property="og:description" content="Protein + electrolyte cocktail sachets built for long nights. Browse flavours, recipes, and add to bag.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://procktails.example/">
+  <meta property="og:image" content="assets/poster.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Procktails - Protein + Electrolyte Cocktail Sachets">
+  <meta name="twitter:description" content="Protein + electrolyte sachets for smarter cocktails.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Replace data-domain with your production domain -->
+  <script defer data-domain="procktails.example" src="https://plausible.io/js/script.js"></script>
+</head>
+<body>
+  <!-- Fixed background video -->
+  <div class="video-layer">
+    <video id="bgVideo" preload="metadata" muted playsinline aria-hidden="true" poster="assets/poster.png">
+      <source src="assets/procktail-reveal.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="video-overlay"></div>
+  </div>
+
+  <!-- Sticky header -->
+  <header class="site-header" aria-label="Site header">
+    <div class="logo">Procktails</div>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#card-hero">Home</a>
+      <a href="#card-store">Store</a>
+      <a href="#card-cocktails">Recommended</a>
+      <a href="#card-benefits">Benefits</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle menu">Menu</button>
+    <div class="mobile-drawer" aria-label="Mobile navigation">
+      <div class="drawer-header">
+        <span>Menu</span>
+        <button class="menu-close" aria-label="Close menu">Close</button>
+      </div>
+      <a href="#card-hero" class="drawer-link">Home</a>
+      <a href="#card-store" class="drawer-link">Store</a>
+      <a href="#card-cocktails" class="drawer-link">Recommended</a>
+      <a href="#card-benefits" class="drawer-link">Benefits</a>
+      <a href="cart.html" class="drawer-link">Cart</a>
+    </div>
+    <a href="cart.html" class="cart-bubble" aria-label="View cart">
+      &#128722; <span id="cart-count">0</span>
+    </a>
+  </header>
+
+  <!-- SNAP-SCROLL CONTAINER -->
+  <div class="snap-container">
+    <main class="cards-track" role="main">
+      <!-- CARD 1: HERO -->
+      <section
+        class="scene-card"
+        id="card-hero"
+        data-video-progress="0"
+      >
+        <div class="card-inner hero-card">
+          <span class="pill">New</span>
+          <h1>Procktails</h1>
+          <p class="lead">
+            Protein + electrolyte sachets that turn your favourite spirits into
+            smarter cocktails. Scroll down to see Procktails in motion.
+          </p>
+          <div class="hero-actions">
+            <a href="#card-store" class="btn-primary">Shop the sachets</a>
+            <span class="scroll-hint">Scroll - cards snap & the video moves with you</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- CARD 2: STORE -->
+      <section
+        class="scene-card"
+        id="card-store"
+        data-video-progress="0.4"
+      >
+        <div class="card-inner">
+          <h2>Store - The Originals</h2>
+          <p class="card-subtitle">
+            Choose your flavour, mix with your go-to drink, and you're good.
+          </p>
+          <div class="product-scroll-wrapper">
+            <!-- Left arrow -->
+            <button class="scroll-arrow left-arrow" aria-label="Scroll left">&lsaquo;</button>
+            <!-- Horizontal scroll container -->
+            <div class="product-scroll">
+              <div class="product-track">
+                <!-- Product 1 -->
+                <article class="product-card lime-card"
+                  data-product-id="lime-electro"
+                  data-product-name="Lime Electro Punch"
+                  data-product-price="4.99"
+                  data-product-image="assets/ChatGPT Image Nov 21, 2025, 12_45_30 AM.png"
+                  data-notes="Bright lime, saline edge, clean finish"
+                  data-ingredients="Whey isolate; sodium; potassium; magnesium; natural lime oils"
+                  data-nutrition="10g protein | 70 kcal | low sugar"
+                  data-description="Built for vodka sodas and tequila. Crisp lime + salt, 10g protein and electrolytes for long nights."
+                  data-badges="&#127819; Citrus,&#9889; Electrolytes,&#128170; Protein"
+                >
+                  <div class="product-img-wrap">
+                    <img src="assets/lime-electro.svg"
+                         class="product-img"
+                         alt="Lime Electro Punch sachet"
+                         loading="lazy"
+                         data-default-src="assets/lime-electro.svg"
+                         data-preview-src="assets/ChatGPT Image Nov 21, 2025, 12_45_30 AM.png">
+                    <div class="hover-tag">Hover to preview</div>
+                  </div>
+                  <div class="badge-row">
+                    <span class="badge">&#127819; Citrus</span>
+                    <span class="badge">&#9889; Electrolytes</span>
+                    <span class="badge">&#128170; Protein</span>
+                  </div>
+                  <h3>Lime Electro Punch</h3>
+                  <p>
+                    Built for vodka sodas and tequila. Crisp lime + salt,
+                    10g protein and electrolytes for long nights.
+                  </p>
+                  <div class="strength-row">
+                    <span class="pill tiny">Protein focus</span>
+                    <div class="strength-bar" data-strength="80"><span></span></div>
+                  </div>
+                  <div class="microcopy-row">
+                    <span class="pill tiny">Ships 3-5 days</span>
+                    <span class="pill tiny">Contains dairy</span>
+                  </div>
+                  <ul>
+                    <li>10g protein per sachet</li>
+                    <li>Electrolytes for hydration support</li>
+                    <li>Low sugar, clean finish</li>
+                  </ul>
+                  <div class="product-actions">
+                    <span class="price-pill">$4.99</span>
+                    <button class="btn-outline add-to-cart"
+                            data-product-id="lime-electro"
+                            data-product-name="Lime Electro Punch"
+                            data-product-price="4.99">Add to bag</button>
+                    <button class="btn-ghost quick-view-btn">Quick view</button>
+                  </div>
+                </article>
+                <!-- Product 2 -->
+                <article class="product-card berry-card"
+                  data-product-id="cosmo"
+                  data-product-name="Cosmo"
+                  data-product-price="4.99"
+                  data-product-image="assets/ChatGPT Image Nov 21, 2025, 12_48_19 AM.png"
+                  data-notes="Berry citrus, spritz-friendly, crisp"
+                  data-ingredients="Whey isolate; electrolytes; cranberry essence; citrus oils"
+                  data-nutrition="10g protein | 70 kcal | low sugar"
+                  data-description="Berry profile that pairs with gin, vodka and spritzes. Light, not syrupy, no fake aftertaste."
+                  data-badges="&#127827; Berry,&#127870; Spritz,&#128167; Light"
+                >
+                  <div class="product-img-wrap">
+                    <img src="assets/cosmo.svg"
+                         class="product-img"
+                         alt="Cosmo sachet mockup"
+                         loading="lazy"
+                         data-default-src="assets/cosmo.svg"
+                         data-preview-src="assets/ChatGPT Image Nov 21, 2025, 12_48_19 AM.png">
+                    <div class="hover-tag">Hover to preview</div>
+                  </div>
+                  <div class="badge-row">
+                    <span class="badge">&#127827; Berry</span>
+                    <span class="badge">&#127870; Spritz</span>
+                    <span class="badge">&#128167; Light</span>
+                  </div>
+                  <h3>Cosmo</h3>
+                  <p>
+                    Berry profile that pairs with gin, vodka and spritzes.
+                    Light, not syrupy, no fake aftertaste.
+                  </p>
+                  <div class="strength-row">
+                    <span class="pill tiny">Balanced</span>
+                    <div class="strength-bar" data-strength="65"><span></span></div>
+                  </div>
+                  <div class="microcopy-row">
+                    <span class="pill tiny">Ships 3-5 days</span>
+                    <span class="pill tiny">Contains dairy</span>
+                  </div>
+                  <ul>
+                    <li>10g protein per sachet</li>
+                    <li>Stacks with soda or tonic</li>
+                    <li>Electrolytes + flavour in one</li>
+                  </ul>
+                  <div class="product-actions">
+                    <span class="price-pill">$4.99</span>
+                    <button class="btn-outline add-to-cart"
+                            data-product-id="cosmo"
+                            data-product-name="Cosmo"
+                            data-product-price="4.99">Add to bag</button>
+                    <button class="btn-ghost quick-view-btn">Quick view</button>
+                  </div>
+                </article>
+                <!-- Product 3 -->
+                <article class="product-card tropical-card"
+                  data-product-id="pina-colada"
+                  data-product-name="Pina Colada"
+                  data-product-price="4.99"
+                  data-product-image="assets/ChatGPT Image Nov 21, 2025, 12_48_12 AM.png"
+                  data-notes="Pineapple, coconut edge, summer-forward"
+                  data-ingredients="Whey isolate; coconut essence; pineapple oils; electrolytes"
+                  data-nutrition="10g protein | 70 kcal | low sugar"
+                  data-description="Rum, pineapple, mango vibes. Built for tiki, frozen blends and anything that feels like summer."
+                  data-badges="&#127796; Tropical,&#127821; Pineapple,&#9728; Summer"
+                >
+                  <div class="product-img-wrap">
+                    <img src="assets/pina-colada.svg"
+                         class="product-img"
+                         alt="Pina Colada sachet mockup"
+                         loading="lazy"
+                         data-default-src="assets/pina-colada.svg"
+                         data-preview-src="assets/ChatGPT Image Nov 21, 2025, 12_48_12 AM.png">
+                    <div class="hover-tag">Hover to preview</div>
+                  </div>
+                  <div class="badge-row">
+                    <span class="badge">&#127796; Tropical</span>
+                    <span class="badge">&#127821; Pineapple</span>
+                    <span class="badge">&#9728; Summer</span>
+                  </div>
+                  <h3>Pina Colada</h3>
+                  <p>
+                    Rum, pineapple, mango vibes. Built for tiki, frozen blends
+                    and anything that feels like summer.
+                  </p>
+                  <div class="strength-row">
+                    <span class="pill tiny">Hydration heavy</span>
+                    <div class="strength-bar" data-strength="70"><span></span></div>
+                  </div>
+                  <div class="microcopy-row">
+                    <span class="pill tiny">Ships 3-5 days</span>
+                    <span class="pill tiny">Contains dairy</span>
+                  </div>
+                  <ul>
+                    <li>10g protein per sachet</li>
+                    <li>Hydration-focused blend</li>
+                    <li>Great in blended cocktails</li>
+                  </ul>
+                  <div class="product-actions">
+                    <span class="price-pill">$4.99</span>
+                    <button class="btn-outline add-to-cart"
+                            data-product-id="pina-colada"
+                            data-product-name="Pina Colada"
+                            data-product-price="4.99">Add to bag</button>
+                    <button class="btn-ghost quick-view-btn">Quick view</button>
+                  </div>
+                </article>
+                <!-- Product 4 -->
+                <article class="product-card"
+                  data-product-id="pornstar-martini"
+                  data-product-name="Pornstar Martini"
+                  data-product-price="4.99"
+                  data-product-image="assets/ChatGPT Image Nov 21, 2025, 12_43_11 AM.png"
+                  data-notes="Passionfruit punch, vanilla satin finish"
+                  data-ingredients="Whey isolate; passionfruit concentrate; vanilla; electrolytes"
+                  data-nutrition="10g protein | 70 kcal | low sugar"
+                  data-description="Extra-bright citrus built for long shifts and late nights."
+                  data-badges="&#11088; Passionfruit,&#10024; Smooth,&#128167; Low sugar"
+                >
+                  <div class="product-img-wrap">
+                    <img src="assets/pornstar.svg"
+                         class="product-img"
+                         alt="Pornstar Martini sachet mockup"
+                         loading="lazy"
+                         data-default-src="assets/pornstar.svg"
+                         data-preview-src="assets/ChatGPT Image Nov 21, 2025, 12_43_11 AM.png">
+                    <div class="hover-tag">Hover to preview</div>
+                  </div>
+                  <div class="badge-row">
+                    <span class="badge">&#11088; Passionfruit</span>
+                    <span class="badge">&#10024; Smooth</span>
+                    <span class="badge">&#128167; Low sugar</span>
+                  </div>
+                  <h3>Pornstar Martini</h3>
+                  <p>
+                    Extra-bright citrus built for long shifts and late nights.
+                  </p>
+                  <div class="strength-row">
+                    <span class="pill tiny">High flavour</span>
+                    <div class="strength-bar" data-strength="60"><span></span></div>
+                  </div>
+                  <div class="microcopy-row">
+                    <span class="pill tiny">Ships 3-5 days</span>
+                    <span class="pill tiny">Contains dairy</span>
+                  </div>
+                  <ul>
+                    <li>10g protein per sachet</li>
+                    <li>Pairs with vodka / gin</li>
+                    <li>Clean, sharp finish</li>
+                  </ul>
+                  <div class="product-actions">
+                    <span class="price-pill">$4.99</span>
+                    <button class="btn-outline add-to-cart"
+                            data-product-id="pornstar-martini"
+                            data-product-name="Pornstar Martini"
+                            data-product-price="4.99">Add to bag</button>
+                    <button class="btn-ghost quick-view-btn">Quick view</button>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <!-- Right arrow -->
+            <button class="scroll-arrow right-arrow" aria-label="Scroll right">&rsaquo;</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- CARD 3: RECOMMENDED COCKTAILS -->
+      <section
+        class="scene-card"
+        id="card-cocktails"
+        data-video-progress="0.6"
+      >
+        <div class="card-inner">
+          <h2>Recommended Cocktails</h2>
+          <p class="card-subtitle">
+            Fast builds with short looping clips so you can see the pour and texture.
+          </p>
+          <div class="cocktail-grid">
+            <article class="cocktail-card">
+              <div class="cocktail-media">
+                <video src="assets/procktail-reveal.mp4" muted loop playsinline autoplay preload="metadata" aria-label="Lime Electro Collins build" loading="lazy"></video>
+              </div>
+              <div class="cocktail-body">
+                <div class="badge-row">
+                  <span class="badge">&#127819; Citrus</span>
+                  <span class="badge">&#9889; Electro</span>
+                </div>
+                <h3>Lime Electro Collins</h3>
+                <p>Vodka collins with a saline edge. Built to stay bright over ice.</p>
+                <ul class="recipe-steps">
+                  <li>30ml vodka, tall glass of ice</li>
+                  <li>1 sachet Lime Electro Punch + top with soda</li>
+                  <li>Roll once, garnish with lime wheels</li>
+                </ul>
+              </div>
+            </article>
+            <article class="cocktail-card">
+              <div class="cocktail-media">
+                <video src="assets/procktail-reveal.mp4" muted loop playsinline autoplay preload="metadata" aria-label="Cosmo Spritz build" loading="lazy"></video>
+              </div>
+              <div class="cocktail-body">
+                <div class="badge-row">
+                  <span class="badge">&#127827; Berry</span>
+                  <span class="badge">&#127870; Spritz</span>
+                </div>
+                <h3>Cosmo Spritz</h3>
+                <p>Soda, gin and the Cosmo sachet keep this light, not syrupy.</p>
+                <ul class="recipe-steps">
+                  <li>30ml gin + ice in a wine glass</li>
+                  <li>1 sachet Cosmo + soda + splash lemonade</li>
+                  <li>Garnish with frozen berries</li>
+                </ul>
+              </div>
+            </article>
+            <article class="cocktail-card">
+              <div class="cocktail-media">
+                <video src="assets/procktail-reveal.mp4" muted loop playsinline autoplay preload="metadata" aria-label="Pina Night Freeze build" loading="lazy"></video>
+              </div>
+              <div class="cocktail-body">
+                <div class="badge-row">
+                  <span class="badge">&#127796; Tropical</span>
+                  <span class="badge">&#127821; Pineapple</span>
+                </div>
+                <h3>Pina Night Freeze</h3>
+                <p>Frozen rum slushy that still hits protein + electrolytes.</p>
+                <ul class="recipe-steps">
+                  <li>Blend rum, ice, splash pineapple</li>
+                  <li>Add 1 sachet Pina Colada and blend smooth</li>
+                  <li>Top with mint + mango chunks</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CARD 4: RECIPES / BENEFITS -->
+      <section
+        class="scene-card"
+        id="card-benefits"
+        data-video-progress="0.8"
+      >
+        <div class="card-inner">
+          <h2>Recipes & Benefits</h2>
+          <p class="card-subtitle">
+            How to use Procktails and why we built it this way.
+          </p>
+
+          <div class="two-column">
+            <div class="column">
+              <h3>How to mix a Procktails cocktail</h3>
+              <ol class="steps">
+                <li>
+                  <strong>Pick your base.</strong>
+                  Vodka soda, gin &amp; tonic, rum + soda, hard seltzer - anything
+                  light and cold.
+                </li>
+                <li>
+                  <strong>Add one sachet.</strong>
+                  Tip in a full Procktails sachet and stir or shake until it's
+                  dissolved.
+                </li>
+                <li>
+                  <strong>Finish the drink.</strong>
+                  Add ice and garnish - lime wedges, berries, herbs - and adjust
+                  with extra soda if needed.
+                </li>
+                <li>
+                  <strong>Repeat.</strong>
+                  Same ritual, different flavour, same functional twist.
+                </li>
+              </ol>
+
+              <h3>Quick recipes</h3>
+              <ul class="recipe-list">
+                <li>
+                  <strong>Lime Electro Vodka:</strong>
+                  Vodka, soda, 1x Lime Electro Punch, ice, lime wedge.
+                </li>
+                <li>
+                  <strong>Berry Gin Spritz:</strong>
+                  Gin, soda + splash lemonade,
+                  1x Cosmo sachet, frozen berries.
+                </li>
+                <li>
+                  <strong>Tropical Rum Freeze:</strong>
+                  White rum, pineapple juice, crushed ice,
+                  1x Pina Colada sachet, blended.
+                </li>
+              </ul>
+            </div>
+
+            <div class="column">
+              <h3>Why Procktails?</h3>
+              <ul class="benefit-list">
+                <li>
+                  <strong>Protein in the glass, not just the shaker.</strong>
+                  15g per sachet to support recovery when your
+                  social life and training schedule clash.
+                </li>
+                <li>
+                  <strong>Electrolytes for the long haul.</strong>
+                  Sodium, potassium and magnesium to help replace
+                  what you're sweating out.
+                </li>
+                <li>
+                  <strong>Low sugar, no heavy mixers.</strong>
+                  Light flavour that sits on top of spirits
+                  instead of drowning them in syrup.
+                </li>
+                <li>
+                  <strong>Built for people who still care tomorrow.</strong>
+                  Not a cure or a "health hack" - just a smarter way to drink
+                  when you're already going out.
+                </li>
+              </ul>
+
+              <div class="how-it-works">
+                <h4>How it works</h4>
+                <div class="how-steps">
+                  <span>Pick flavour</span>
+                  <span>Add spirit + ice</span>
+                  <span>Shake</span>
+                  <span>Pour &amp; enjoy</span>
+                </div>
+              </div>
+
+              <p class="disclaimer">
+                Procktails doesn't cancel out alcohol and isn't a medical product.
+                It sits between gym culture and nightlife. You still need water,
+                sleep, food and common sense. Always drink responsibly.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CARD 5: FAQs / Shipping -->
+      <section class="scene-card" id="card-faq" data-video-progress="0.9">
+        <div class="card-inner">
+          <h2>Shipping, FAQ & Allergens</h2>
+          <p class="card-subtitle">Quick answers for people who want the details.</p>
+          <div class="info-panels">
+            <div class="info-panel">
+              <h3>Shipping</h3>
+              <ul>
+                <li>Domestic: 3-5 business days with tracking.</li>
+                <li>Express: 1-2 business days (metro areas).</li>
+                <li>Returns: Unopened sachets within 30 days.</li>
+              </ul>
+            </div>
+            <div class="info-panel">
+              <h3>Allergens & Nutrition</h3>
+              <ul>
+                <li>Contains milk (whey isolate). No soy or gluten added.</li>
+                <li>~10g protein per sachet, low sugar, light electrolytes.</li>
+                <li>Not a medical product. Drink responsibly.</li>
+              </ul>
+            </div>
+            <div class="info-panel">
+              <h3>FAQ</h3>
+              <ul>
+                <li><strong>How many per drink?</strong> One sachet per serve.</li>
+                <li><strong>Mixing?</strong> Dissolve in cold soda/tonic, then add ice.</li>
+                <li><strong>Storage?</strong> Cool, dry place. No refrigeration needed.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="end-spacer"></div>
+  </div>
+
+  <!-- Floating checkout bar -->
+  <div id="floating-checkout" class="floating-checkout" aria-live="polite">
+    <div class="floating-text">
+      <span class="pill tiny">Cart ready</span>
+      <strong>Finish checkout in a few taps.</strong>
+    </div>
+    <div class="floating-actions">
+      <a href="cart.html" class="btn-primary">Review cart</a>
+      <a href="checkout.html" class="btn-ghost">Checkout</a>
+    </div>
+  </div>
+
+  <!-- Quick view modal -->
+  <div id="quick-view-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close quick view">&times;</button>
+      <div class="modal-nav">
+        <button class="modal-prev" aria-label="Previous product"><</button>
+        <button class="modal-next" aria-label="Next product">></button>
+      </div>
+      <div class="modal-grid">
+        <div class="modal-media">
+          <img id="modal-image" alt="" loading="lazy">
+        </div>
+        <div class="modal-body">
+          <p class="modal-note" id="modal-notes"></p>
+          <h3 id="modal-title"></h3>
+          <p class="modal-description" id="modal-description"></p>
+          <div class="modal-badges" id="modal-badges"></div>
+          <div class="modal-serves">
+            <label for="modal-serves-input">Serves</label>
+            <input type="number" id="modal-serves-input" min="1" value="1" aria-label="Number of serves">
+            <span class="modal-total-price">Total: <strong id="modal-total">$0.00</strong></span>
+          </div>
+          <div class="modal-info">
+            <div>
+              <h4>Ingredients</h4>
+              <ul id="modal-ingredients"></ul>
+            </div>
+            <div>
+              <h4>Nutrition</h4>
+              <p id="modal-nutrition"></p>
+              <button class="btn-primary modal-add-btn" id="modal-add-btn">Add to bag</button>
+            </div>
+          </div>
+          <div class="modal-testimonials">
+            <h4>Tried by the crew</h4>
+            <p class="modal-review" id="modal-review"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll to top -->
+  <button id="scroll-top" class="scroll-top-btn" aria-label="Scroll to top">^</button>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h4>Procktails</h4>
+        <p>Protein + electrolytes built for the nights you still care about tomorrow.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="mailto:hello@procktails.com">hello@procktails.com</a></p>
+        <p>@procktails on IG/TikTok</p>
+      </div>
+      <div>
+        <h4>Info</h4>
+        <p>Shipping: 3-5 days domestic</p>
+        <p>Returns: unopened sachets within 30 days</p>
+        <p>Drink responsibly.</p>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; <span id="year"></span> Procktails. Drink smart. Have fun.</p>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProductCollection",
+    "name": "Procktails Originals",
+    "url": "https://procktails.example/",
+    "product": [
+      {
+        "@type": "Product",
+        "name": "Lime Electro Punch",
+        "description": "Bright lime, electrolytes, 10g protein per sachet.",
+        "image": "https://procktails.example/assets/lime-electro.svg",
+        "offers": { "@type": "Offer", "price": "4.99", "priceCurrency": "USD", "availability": "https://schema.org/InStock" }
+      },
+      {
+        "@type": "Product",
+        "name": "Cosmo",
+        "description": "Berry citrus spritz-friendly sachet with electrolytes.",
+        "image": "https://procktails.example/assets/cosmo.svg",
+        "offers": { "@type": "Offer", "price": "4.99", "priceCurrency": "USD", "availability": "https://schema.org/InStock" }
+      },
+      {
+        "@type": "Product",
+        "name": "Pina Colada",
+        "description": "Tropical pineapple coconut blend with 10g protein.",
+        "image": "https://procktails.example/assets/pina-colada.svg",
+        "offers": { "@type": "Offer", "price": "4.99", "priceCurrency": "USD", "availability": "https://schema.org/InStock" }
+      },
+      {
+        "@type": "Product",
+        "name": "Pornstar Martini",
+        "description": "Passionfruit citrus sachet with vanilla finish and electrolytes.",
+        "image": "https://procktails.example/assets/pornstar.svg",
+        "offers": { "@type": "Offer", "price": "4.99", "priceCurrency": "USD", "availability": "https://schema.org/InStock" }
+      }
+    ]
+  }
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

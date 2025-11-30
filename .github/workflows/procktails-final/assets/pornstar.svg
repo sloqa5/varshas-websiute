@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="g4" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#f43f5e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" rx="48" fill="url(#g4)"/>
+  <rect x="36" y="34" width="728" height="532" rx="36" fill="rgba(2,6,23,0.32)"/>
+  <text x="64" y="180" fill="#fff7ed" font-family="Inter, Arial, sans-serif" font-size="60" font-weight="800">Pornstar</text>
+  <text x="64" y="240" fill="#fff7ed" font-family="Inter, Arial, sans-serif" font-size="50" font-weight="700">Martini</text>
+  <text x="64" y="320" fill="#ffe4e6" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="600">Passionfruit punch, vanilla satin finish.</text>
+  <text x="64" y="380" fill="#ffe4e6" font-family="Inter, Arial, sans-serif" font-size="22">10g protein | bright citrus | low sugar</text>
+  <circle cx="660" cy="150" r="70" fill="#fb7185" opacity="0.35"/>
+  <circle cx="640" cy="200" r="34" fill="#fff1f2" opacity="0.7"/>
+  <circle cx="140" cy="120" r="40" fill="#fb923c" opacity="0.35"/>
+</svg>
