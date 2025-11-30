@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Bag | Procktails</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="cart">
+  <header class="site-header">
+    <div class="logo">Procktails</div>
+    <nav class="main-nav">
+      <a href="index.html#store">Store</a>
+      <a href="index.html#recipes">Recipes</a>
+      <a href="index.html#videos">Tutorials</a>
+      <a href="index.html#about">About</a>
+    </nav>
+    <a class="cart-badge" href="cart.html">
+      <span class="cart-icon" aria-hidden="true">🛍</span>
+      <span class="cart-count" aria-live="polite">0</span>
+    </a>
+  </header>
+
+  <main class="section cart-page">
+    <div class="section-header">
+      <p class="eyebrow">Your bag</p>
+      <div class="section-title-row">
+        <h1>Ready to pour?</h1>
+        <p class="section-subtitle">Adjust quantities, review flavours, or head back to add more sachets.</p>
+      </div>
+    </div>
+
+    <div class="cart-layout">
+      <div class="cart-items" id="cartItems" aria-live="polite"></div>
+      <aside class="cart-summary">
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span id="cartSubtotal">$0</span>
+        </div>
+        <p class="muted">Tax and shipping calculated at checkout. Payment flow coming soon.</p>
+        <button class="btn primary full" id="checkoutBtn" disabled>Checkout (coming soon)</button>
+        <a class="btn ghost full" href="index.html">Continue shopping</a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="logo">Procktails</div>
+      <nav class="footer-nav">
+        <a href="index.html#store">Store</a>
+        <a href="index.html#recipes">Recipes</a>
+        <a href="index.html#videos">Tutorials</a>
+        <a href="index.html#about">About</a>
+      </nav>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="TikTok">TT</a>
+        <a href="#" aria-label="YouTube">YT</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2024 Procktails. Crafted for modern hosts.</div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">Added to bag</div>
+  <script src="script.js"></script>
+</body>
+</html>
